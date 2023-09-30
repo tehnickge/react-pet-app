@@ -1,9 +1,9 @@
 import "./DiagramBar.css"
 
 const DiagramBar = (props) => {
-
+    //use this value in css style
     let barFillHeight = '0%';
-
+    //logic
     if(props.maxValue > 0) {
         barFillHeight = Math.round(props.value / props.maxValue * 100) + '%';
         console.log(barFillHeight);

@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import "./CostForm.css"
 
 const CostForm = (props) => {
-
+    //states of inputs
     const [inputName, setInputName] = useState("");
     const [inputAmount, setInputAmount] = useState("");
     const [inputDate, setInputDate] = useState("2022-01-01");
@@ -12,6 +12,7 @@ const CostForm = (props) => {
     //     date: ''
     // })
 
+    //name
     const nameChangeHandler = (event) => {
         setInputName(event.target.value);
         console.log(inputName);
@@ -29,6 +30,7 @@ const CostForm = (props) => {
         // console.log(userInput.name);
     };
 
+    //amount
     const amountChangeHandler = (event) => {
         setInputAmount(event.target.value);
         console.log(inputAmount);
@@ -45,6 +47,7 @@ const CostForm = (props) => {
         // console.log(userInput.amount);
     };
 
+    //date
     const dateChangeHandler = (event) => {
         setInputDate(event.target.value);
         console.log(inputDate);
@@ -61,6 +64,7 @@ const CostForm = (props) => {
         // console.log(userInput.date);
     };
 
+    //export data from form
     const submitHandler = (event) => {
         event.preventDefault();
         const costData = {
